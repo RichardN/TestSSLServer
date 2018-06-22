@@ -13,6 +13,7 @@ node () {
   }
   stage ('Compile sources'){
     tool name: 'maven353', type: 'hudson.tasks.Maven$MavenInstallation'
+    sh 'echo $PATH'
     sh 'mvn clean compile'
   }
   stage ('Execute Test SSL support features'){
