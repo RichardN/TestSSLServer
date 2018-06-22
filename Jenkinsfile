@@ -12,7 +12,7 @@ node () {
     git 'https://github.com/kuisathaverat/TestSSLServer.git'
   }
   stage ('Compile sources'){
-    //tool name: 'maven3', type: 'hudson.tasks.Maven$MavenInstallation'
+    tool name: 'maven353', type: 'hudson.tasks.Maven$MavenInstallation'
     sh 'mvn clean compile'
   }
   stage ('Execute Test SSL support features'){
