@@ -9,7 +9,7 @@ node () {
   }
   stage ('Download sources'){
     tool name: 'Default', type: 'hudson.plugins.git.GitTool'
-    git 'https://github.com/kuisathaverat/TestSSLServer.git'
+    git 'https://github.com/RichardN/TestSSLServer.git'
   }
   stage ('Compile sources'){
     tool name: 'maven353', type: 'hudson.tasks.Maven$MavenInstallation'
